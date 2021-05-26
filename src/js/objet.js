@@ -3,19 +3,13 @@ let salleDattente = {
     laSalle: [],
 };
 
-// let cabinet = {
-//     nom: "cabinet",
-//     cabinet: [],
-// };
-
 let pharmacie = {
     nom: "Pharmacie",
     clients :[],
     caisse: 0,
     recevoir(prix){
         this.caisse += prix;
-    }
-    
+    }  
 };
 
 let cimetiere = {
@@ -23,10 +17,15 @@ let cimetiere = {
     tombe: [],
 };
 
+let chat = {
+    nom: "hamid",
+    miauler(){
+         setInterval(()=>{
+
+              console.log(`miaw`)
+          },2000)
+    },
+}
 
 
-
-
-
-
-export {salleDattente,pharmacie, cimetiere}
+export {salleDattente,pharmacie, cimetiere,chat}

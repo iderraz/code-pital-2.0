@@ -1,5 +1,5 @@
 import{Malade,Medecin,Diagnostique,Traitement} from './classe.js'
-import {salleDattente,pharmacie,cimetiere} from './objet.js'
+import {salleDattente,pharmacie,cimetiere,chat} from './objet.js'
 
 
 let marcus = new Malade("Marcus", "mal indenté", 100,[],"malade");
@@ -24,6 +24,7 @@ console.log(salleDattente.laSalle,momo.cabinet);
 console.log(`${marcus.nom} est entré au cabinet `);
 
 // miaw place 
+chat.miauler();
 
 console.log(`La maladie ${marcus.nom} est ${marcus.maladie}`);
 

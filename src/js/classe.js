@@ -23,7 +23,6 @@ class Malade {
     }
 }
 
-
 class Medecin {
     constructor(nom, argent,cabinet,consultation){
         this.nom = nom;
@@ -54,16 +53,11 @@ class Diagnostique {
     }
 }
 
-
 class Traitement {
     constructor(traitement, prix){
         this.traitement = traitement;
         this.prix = prix;
     }
 }
-
-
-
-
 
 export{Malade,Medecin,Traitement,Diagnostique}
