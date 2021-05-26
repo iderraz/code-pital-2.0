@@ -177,7 +177,7 @@ console.log(`${semicolon.nom} est allé à la ${pharmacie.nom} `);
 
 console.log(`le traitement de ${semicolon.nom} coût ${momo.consulation} euros`);
 
-semicolon.payer(ctrlmajF.prix);
+semicolon.payer(f12doc.prix);
 semicolon.seDeplacer(pharmacie.clients, cimetiere.tombe);
 console.log(cimetiere);
 
