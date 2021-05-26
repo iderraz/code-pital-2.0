@@ -1,7 +1,6 @@
 import{Malade,Medecin,Diagnostique,Traitement} from './classe.js'
 import {salleDattente,pharmacie,cimetiere,chat} from './objet.js'
 
-
 let marcus = new Malade("Marcus", "mal indenté", 100,[],"malade");
 let optimus = new Malade("Optimus", "unsave", 200,[],"malade");
 let sangoku = new Malade("sangoku", 404, 100,[],"malade");
@@ -55,6 +54,8 @@ console.log(`${marcus.nom} n'as pas payé son traitement, il est mort et enterre
 
 // --------------------------- //
 
+console.log(`Dans ${salleDattente.nom}, il y ${salleDattente.laSalle.length} personnes`);
+
 optimus.seDeplacer(salleDattente.laSalle, momo.cabinet);
 console.log(salleDattente.laSalle,momo.cabinet);
 console.log(`${optimus.nom} est entré au cabinet `);
@@ -86,6 +87,8 @@ optimus.payer(saveOnFocusChange.prix);
 console.log(`${optimus.nom} est soigné`);
 
 // --------------------------- //
+
+console.log(`Dans ${salleDattente.nom}, il y ${salleDattente.laSalle.length} personnes`);
 
 sangoku.seDeplacer(salleDattente.laSalle, momo.cabinet);
 console.log(salleDattente.laSalle,momo.cabinet);
@@ -121,6 +124,8 @@ console.log(`${sangoku.nom} n'as pas payé son traitement, il est mort et enterr
 
 // --------------------------- //
 
+console.log(`Dans ${salleDattente.nom}, il y ${salleDattente.laSalle.length} personnes`);
+
 darthVader.seDeplacer(salleDattente.laSalle, momo.cabinet);
 console.log(salleDattente.laSalle,momo.cabinet);
 console.log(`${darthVader.nom} est entré au cabinet `);
@@ -151,6 +156,8 @@ darthVader.payer(ventoline.prix);
 console.log(`${darthVader.nom} est soigné`);
 
 // --------------------------- //
+
+console.log(`Dans ${salleDattente.nom}, il y ${salleDattente.laSalle.length} personnes`);
 
 semicolon.seDeplacer(salleDattente.laSalle, momo.cabinet);
 console.log(salleDattente.laSalle,momo.cabinet);
@@ -183,6 +190,8 @@ semicolon.seDeplacer(pharmacie.clients, cimetiere.tombe);
 console.log(cimetiere);
 
 console.log(`${semicolon.nom} n'as pas payé son traitement, il est mort et enterrer au ${cimetiere.nom}`);
+
+console.log(`Dans ${salleDattente.nom}, il y ${salleDattente.laSalle.length} personnes`);
 
 
 
